@@ -5,7 +5,8 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-	ItemValidTest.class
+	ItemValidTest.class,
+	NavBarTest.class
 })
 
 public class TestSuite {}
