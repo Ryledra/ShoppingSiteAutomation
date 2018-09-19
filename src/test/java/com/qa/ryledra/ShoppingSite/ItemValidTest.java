@@ -46,7 +46,7 @@ public class ItemValidTest {
 	
 	@BeforeClass
 	public static void initial()	{
-		report = new ExtentReports("C:\\Users\\Admin\\Desktop\\Automated Testing\\Reports\\ShoppingReport.html", false);
+		report = TestSuite.report;
 	}
 	
 	@Before
