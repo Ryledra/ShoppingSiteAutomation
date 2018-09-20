@@ -21,9 +21,7 @@ public class NavBarTest {
 	public ExtentTest test;
 
 	WebDriver driver;
-	String url = "http://automationpractice.com/index.php";
-	final String cDFilePath = "C:\\Testing\\chromedriver.exe";
-	final String driverType = "webdriver.chrome.driver";
+	
 	
 	@BeforeClass
 	public static void initial()	{
@@ -32,10 +30,10 @@ public class NavBarTest {
 	
 	@Before
 	public void setup()	{
-		System.setProperty(driverType, cDFilePath);
+		System.setProperty(Constants.driverType, Constants.cDFilePath);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(url);
+		driver.get(Constants.url);
 	}
 	
 	@Test

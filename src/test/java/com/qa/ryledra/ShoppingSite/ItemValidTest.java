@@ -38,9 +38,6 @@ public class ItemValidTest {
 	}
 	
 	WebDriver driver;
-	String url = "http://automationpractice.com/index.php";
-	final String cDFilePath = "C:\\Testing\\chromedriver.exe";
-	final String driverType = "webdriver.chrome.driver";
 	
 	private String searchItem;
 	
@@ -51,10 +48,10 @@ public class ItemValidTest {
 	
 	@Before
 	public void setup()	{
-		System.setProperty(driverType, cDFilePath);
+		System.setProperty(Constants.driverType, Constants.cDFilePath);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(url);
+		driver.get(Constants.url);
 	}
 	
 	@Test
